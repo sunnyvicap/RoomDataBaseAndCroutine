@@ -43,33 +43,44 @@ class LoginActivity : AppCompatActivity() {
 
         } else {
 
-            if (strUserName.contentEquals("User") && strPassword.contentEquals("12345678")) {
+            if (strUserName.contentEquals("User") && strPassword.contentEquals("12345")) {
 
 
 
                 localPrefrances.userLogin = true
                 localPrefrances.merchantLogin = false
 
-            } else if (strUserName.contentEquals("Merchant") && strPassword.contentEquals("12345678")) {
+                localPrefrances.isLogout = false
+
+                val intent = Intent(this, HomeActivity::class.java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+
+                startActivity(intent)
+                finish()
+
+            } else if (strUserName.contentEquals("Merchant") && strPassword.contentEquals("12345")) {
 
 
 
                 localPrefrances.userLogin = false
                 localPrefrances.merchantLogin = true
 
+                localPrefrances.isLogout = false
+
+                val intent = Intent(this, HomeActivity::class.java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+
+                startActivity(intent)
+                finish()
+
             } else {
-                toast("Name Name and Password is not valid")
+                toast("User Name and Password is not valid")
             }
 
 
-            localPrefrances.isLogout = false
 
-            val intent = Intent(this, HomeActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-
-            startActivity(intent)
-            finish()
         }
 
     }
