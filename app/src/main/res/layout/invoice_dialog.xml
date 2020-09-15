@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainInvoiceLYT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/textHeading5"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Primary"
+            android:padding="@dimen/size10"
+            android:text="@string/invoice"
+            />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:background="@color/Primary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/serialNO"
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:layout_weight="0.5"
+                android:text="@string/srno"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/productName"
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/product_name"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/productQty"
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/qty"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/productPrice"
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/Amount"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/Primary"/>
+
+
+    <LinearLayout
+        android:id="@+id/addInvoiceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:layout_weight="0.5"
+                android:visibility="invisible"
+                android:text="@string/srno"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/total_price"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/gst"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mTotalAmount"
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/Amount"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:layout_weight="0.5"
+                android:visibility="invisible"
+                android:text="@string/srno"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/gst_text"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mGst"
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/gst"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mGstAmount"
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/Amount"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:layout_weight="0.5"
+                android:visibility="invisible"
+                android:text="@string/srno"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/Discount"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mDiscount"
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mDiscountAmount"
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/Amount"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/Primary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:layout_weight="0.5"
+                android:visibility="invisible"
+                android:text="@string/srno"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/gross_total"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:visibility="invisible"
+                android:text="@string/gst"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mGrossAmount"
+                style="@style/textcaption1"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Primary"
+                android:padding="@dimen/size10"
+                android:text="@string/Amount"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

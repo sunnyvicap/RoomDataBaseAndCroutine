@@ -1,0 +1,144 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Primary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/Primary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="textSubtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+
+    </style>
+
+    <style name="textcaption1" parent="TextAppearance.MaterialComponents.Caption">
+
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+
+    </style>
+
+    <style name="textSubtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:paddingTop">@dimen/size2</item>
+        <item name="android:paddingBottom">@dimen/size2</item>
+
+    </style>
+
+    <style name="textHeading1" parent="TextAppearance.MaterialComponents.Headline1">
+
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/size10</item>
+        <item name="android:paddingBottom">@dimen/size10</item>
+
+    </style>
+
+
+    <style name="textHeading2" parent="TextAppearance.MaterialComponents.Headline2">
+
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/size10</item>
+        <item name="android:paddingBottom">@dimen/size10</item>
+
+    </style>
+
+
+    <style name="textHeading3" parent="TextAppearance.MaterialComponents.Headline3">
+
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/size10</item>
+        <item name="android:paddingBottom">@dimen/size10</item>
+
+    </style>
+
+
+    <style name="textHeading4" parent="TextAppearance.MaterialComponents.Headline4">
+
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/size10</item>
+        <item name="android:paddingBottom">@dimen/size10</item>
+
+    </style>
+
+
+    <style name="textHeading5" parent="TextAppearance.MaterialComponents.Headline5">
+
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/size10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingBottom">@dimen/size10</item>
+
+    </style>
+
+    <style name="textHeading6" parent="TextAppearance.MaterialComponents.Headline6">
+
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingTop">@dimen/size10</item>
+        <item name="android:paddingBottom">@dimen/size10</item>
+
+    </style>
+
+    <style name="textBody2" parent="TextAppearance.MaterialComponents.Body2">
+
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">@dimen/size10</item>
+        <item name="android:paddingBottom">@dimen/size10</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="textBody1" parent="TextAppearance.MaterialComponents.Body1">
+
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">@dimen/size10</item>
+        <item name="android:paddingBottom">@dimen/size10</item>
+
+    </style>
+
+
+
+    <style name="editTextMedium" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="boxStrokeColor">#fff</item>
+        <item name="boxStrokeErrorColor">@color/error</item>
+        <item name="errorTextColor">@color/error</item>
+        <item name="startIconTint">@color/white</item>
+
+
+    </style>
+
+</resources>

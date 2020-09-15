@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">ShoppingZenex</string>
+
+    <!--Login-->
+    <string name="login">Login</string>
+    <string name="text_email_address">User Name</string>
+    <string name="text_email_password">Password</string>
+
+    <!--Menu-->
+    <string name="menu_logout">Logout</string>
+    <string name="rupee_symbol">\u20B9</string>
+
+    <!--Home -->
+    <string name="my_shopping">My Shpping</string>
+    <string name="add_to_cart">Cart</string>
+    <string name="product_name">Product Name</string>
+    <string name="available">Available</string>
+    <string name="not_available">Not Available</string>
+
+    <!--Invoice-->
+    <string name="invoice">Invoice</string>
+    <string name="srno">SrNo</string>
+    <string name="qty">Qty</string>
+    <string name="Amount">Amount</string>
+
+    <string name="items">Items: 5</string>
+    <string name="proceed">Place Order</string>
+    <string name="proceed_order">Proceed Order</string>
+    <string name="total">Total: 450</string>
+
+    <!--Cart-->
+    <string name="coupon_name">LUCKY 50</string>
+    <string name="coupon">Coupon Available</string>
+    <string name="order_detail">Order Details</string>
+    <string name="apply_coupon">Apply</string>
+    <string name="item_count">Item Count</string>
+    <string name="total_items">Total Items :</string>
+    <string name="total_price">Total Price :</string>
+    <string name="gst">5 %</string>
+    <string name="gst_text">GST :</string>
+    <string name="Discount">Discount :</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="gross_total">Gross Total</string>
+    <string name="order_succesfull">Order Successful</string>
+    <string name="ok">OK</string>
+    <string name="logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/size10"
+    app:cardBackgroundColor="@color/Primary"
+    android:layout_margin="@dimen/size5"
+    app:cardPreventCornerOverlap="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/size5">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/productImg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_wear_t_shirt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/productName"
+            style="@style/textSubtitle2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size10"
+            android:text="@string/product_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productImg" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/productPrice"
+            style="@style/textSubtitle2"
+            android:layout_width="0dp"
+            android:padding="@dimen/size10"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/productName"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+     <!--   <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/productDescription"
+            style="@style/textcaption1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:padding="@dimen/size10"
+            android:text="@string/product_name"
+            app:layout_constraintEnd_toStartOf="@+id/mButtonSignIn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productName" />
+-->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mAddCart"
+            style="@style/textcaption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:background="@drawable/flat_rounded_background"
+            app:drawableStartCompat="@drawable/ic_baseline_add"
+            app:cornerRadius="@dimen/size30"
+            android:paddingTop="@dimen/size5"
+            android:paddingBottom="@dimen/size5"
+            android:paddingEnd="@dimen/size10"
+            android:paddingStart="@dimen/size10"
+            android:text="@string/add_to_cart"
+            android:textColor="@color/Primary"
+            app:layout_constraintTop_toBottomOf="@id/productName"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
